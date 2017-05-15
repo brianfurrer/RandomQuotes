@@ -11,6 +11,13 @@ html, body {
   z-index: -2;
 }
 
+.quotes {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: 'Fira Sans', sans-serif;
+}
+
 #display {
 	color: white;
 	font-size: 2.9em;
