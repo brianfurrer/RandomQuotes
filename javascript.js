@@ -18,3 +18,7 @@ function newQuote() {
 	var randomNumber = Math.floor(Math.random() * (quotes.length) );
 	document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
 }
+function tweet() {
+   var twtLink = 'http://twitter.com/home?status=' +encodeURIComponent(textToTweet);
+ window.open(twtLink,'_blank');
+}
