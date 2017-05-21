@@ -19,6 +19,7 @@ function newQuote() {
 	document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
 }
 function tweet() {
+   var textToWeet = quotes[randomNumber];
    var twtLink = 'http://twitter.com/home?status=' +encodeURIComponent(textToTweet);
  window.open(twtLink,'_blank');
 }
