@@ -17,9 +17,9 @@ var quotes = [
 function newQuote() {
 	randomNumber = Math.floor(Math.random() * (quotes.length) );
 	document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+	textToTweet = quotes[randomNumber];
 }
 function tweet() {
-   var textToTweet = quotes[randomNumber];
    var twtLink = 'http://twitter.com/home?status=' +encodeURIComponent(textToTweet);
  window.open(twtLink,'_blank');
 }
