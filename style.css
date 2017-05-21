@@ -11,6 +11,11 @@ html, body {
   z-index: -2;
 }
 
+#quoteDisplay{
+  width: 600px;
+  margin: auto;
+}
+
 .quotes {
   background-color: white;
   border-radius: 5px;
@@ -18,7 +23,7 @@ html, body {
   font-family: 'Fira Sans', sans-serif;
 }
 
-#quoteDisplay {
+#display {
 	color: white;
 	font-size: 2.9em;
 	top: 10px;
