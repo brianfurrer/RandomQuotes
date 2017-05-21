@@ -17,7 +17,13 @@ var quotes = [
 function newQuote() {
 	randomNumber = Math.floor(Math.random() * (quotes.length) );
 	document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
-	textToTweet = quotes[randomNumber];
+     str = quotes[randomNumber];
+     if(str.length>140){
+        textToTweet = str.substring(0,137) + "...";
+     }
+     else {
+       textToTweet = str.replace("<br>&mdash;", "\n—");
+     }
 }
 function tweet() {
    var twtLink = 'http://twitter.com/home?status=' +encodeURIComponent(textToTweet);
