@@ -15,7 +15,7 @@ var quotes = [
 "We accept the love we think we deserve. <br>&mdash; Stephen Chbosky, The Perks of Being a Wallflower"
 ];
 function newQuote() {
-	var randomNumber = Math.floor(Math.random() * (quotes.length) );
+	randomNumber = Math.floor(Math.random() * (quotes.length) );
 	document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
 }
 function tweet() {
